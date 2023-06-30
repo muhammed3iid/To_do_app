@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'To do app',
+      title: 'Todo app',
       home: Home(),
     );
   }

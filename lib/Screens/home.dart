@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:to_do_app/constants/colors.dart';
 import 'package:to_do_app/widgets/AppBars/app_bar.dart';
 
-import '../Models/todo.dart';
+import '../Models/todo_model.dart';
 import '../Widgets/add_todo_item.dart';
 import '../Widgets/todo_item.dart';
 import '../widgets/SearchBoxes/search_box.dart';

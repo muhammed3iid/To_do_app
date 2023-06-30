@@ -1,6 +1,6 @@
 # Flutter Todo mobile application
 
-This is a daily task manager application project created in flutter. Install this application from [Google Play Store](https://play.google.com/store/apps/details?id=bornomala.todo) or Get it from [GitHub Release](https://github.com/aratheunseen/flutter-task-manager/releases/download/android/todo-android.apk).
+This is a task manager application project created in flutter.
 
 ## Screenshots
 
@@ -27,7 +27,7 @@ Step-3: Run flutter project -
               ├─── Constants
               │       └─── colors.dart
               ├─── Models
-              │       └─── todo.dart
+              │       └─── todo_model.dart
               ├─── Screens
               │       └─── home.dart
               ├─── Widgets
