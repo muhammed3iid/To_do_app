@@ -4,6 +4,10 @@ This is a task manager application project created in flutter.
 
 ## Screenshots
 
+<div>
+<img src ="https://github.com/muhammed3iid/flutter-todo-mobile-app/blob/master/lib/Assets/Screenshots/Screenshot_20230630_211840.png">
+<img src ="https://github.com/muhammed3iid/flutter-todo-mobile-app/blob/master/lib/Assets/Screenshots/Screenshot_20230630_212029.png">
+</div>
 
 ## Getting Started
 
