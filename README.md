@@ -1,17 +1,58 @@
-# to_do_app
+# Flutter Todo mobile application
 
-A new Flutter project.
+This is a daily task manager application project created in flutter. Install this application from [Google Play Store](https://play.google.com/store/apps/details?id=bornomala.todo) or Get it from [GitHub Release](https://github.com/aratheunseen/flutter-task-manager/releases/download/android/todo-android.apk).
+
+## Screenshots
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Step-1: Download or clone this repository -
 
-A few resources to get you started if this is your first Flutter project:
+    git clone https://github.com/muhammed3iid/flutter-todo-mobile-app.git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Step-2: Go to project root and execute the following command in console to get the required dependencies -
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
+    flutter pub get 
+
+Step-3: Run flutter project -
+
+    flutter run
+
+## Project Structure
+
+        ├─── android
+        ├─── ios
+        ├─── lib
+              ├─── Constants
+              │       └─── colors.dart
+              ├─── Models
+              │       └─── todo.dart
+              ├─── Screens
+              │       └─── home.dart
+              ├─── Widgets
+              │       └─── AppBars
+              │       │        └─── app_bar.dart
+              │       └─── SearchBoxes
+              │       │        └─── search_box.dart
+              │       └─── add_todo_item.dart
+              │       └─── todo_item.dart
+              └─── main.dart
+        └─── pubspec.yaml
+
+## Required Tools
+- Android Studio
+- Visual Studio Code (Optional)
+- Flutter
+- Dart
+
+## New to Flutter project!
+
+Follow this -
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-"# flutter_ToDoAppClone" 
