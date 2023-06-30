@@ -9,13 +9,14 @@ import '../widgets/SearchBoxes/search_box.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-
   final todoList = Todo.todoList();
+  final todoController = TextEditingController();
 
   void handleTodoChange(Todo todo) {
     setState(() {
@@ -23,10 +24,18 @@ class _HomeState extends State<Home> {
     });
   }
 
-  void deleteTodoItem(int id){
+  void deleteTodoObj(int id) {
     setState(() {
       todoList.removeWhere((element) => element.id == id);
     });
+  }
+
+  void addTodoObj(String todoText) {
+    setState(() {
+      todoList.add(
+          Todo(id: DateTime.now().millisecondsSinceEpoch, todoText: todoText));
+    });
+    todoController.clear();
   }
 
   @override
@@ -58,7 +67,7 @@ class _HomeState extends State<Home> {
                         TodoItem(
                           todo: todo,
                           onTodoChanged: handleTodoChange,
-                          onDeleteItem: deleteTodoItem,
+                          onDeleteItem: deleteTodoObj,
                         ),
                     ],
                   ),
@@ -66,7 +75,10 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          addTodoItem(),
+          AddTodoItem(
+            todoController: todoController,
+            onAddTodoObj: addTodoObj,
+          ),
         ],
       ),
     );
